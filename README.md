@@ -158,6 +158,39 @@ export const LOCAL_STORAGE_KEYS = {
 - npm or yarn
 - IO Intelligence API key
 
+✅ Firebase Setup Steps (No Code)
+Go to https://console.firebase.google.com
+
+Create a new project → Give it a name → Click "Continue" → Complete setup
+
+In the project dashboard, go to Build > Authentication
+
+Click on "Get started" under Authentication
+
+Go to the "Sign-in method" tab
+
+Enable "Email/Password" → Click the pencil/edit icon → Toggle to "Enable" → Save
+
+Enable "Google" provider → Click the pencil/edit icon
+
+Select a support email
+
+Leave other settings default
+
+Click Save
+
+Go to Project Settings (⚙️ gear icon top left > Project settings)
+
+Under General > Your Apps, register a new Web App
+
+Give it a nickname (e.g. "Web App")
+
+Click Register App (you can skip Firebase Hosting setup)
+
+Copy the Firebase config object shown there — you'll need it for .env
+
+
+
 ### Environment Configuration
 
 Create a `.env` file in the root directory:
@@ -165,6 +198,17 @@ Create a `.env` file in the root directory:
 ```env
 VITE_IO_API_KEY=your_io_intelligence_api_key_here
 VITE_IO_MODEL_NAME=meta-llama/Llama-3.3-70B-Instruct
+
+#for authentication , we are using fire base:
+
+VITE_FIREBASE_API_KEY=your_firebase_api_key 
+VITE_FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com 
+VITE_FIREBASE_PROJECT_ID=your_project_id 
+VITE_FIREBASE_STORAGE_BUCKET=your_project_id.appspot.com 
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id 
+VITE_FIREBASE_APP_ID=your_app_id 
+VITE_FIREBASE_MEASUREMENT_ID=your_measurement_id
+
 ```
 
 ### Installation Steps
