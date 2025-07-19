@@ -237,18 +237,13 @@ cd hackmvp
 npm install
 ```
 
-3. **Set up environment variables**
-```bash
-cp .env.example .env
-# Edit .env with your IO Intelligence API key
-```
 
-4. **Start development server**
+3. **Start development server**
 ```bash
 npm run dev
 ```
 
-5. **Build for production**
+4. **Build for production**
 ```bash
 npm run build
 ```
